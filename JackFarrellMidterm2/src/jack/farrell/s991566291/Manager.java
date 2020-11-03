@@ -1,12 +1,16 @@
-package midtermTuesday;
+package jack.farrell.s991566291;
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 
 
 /**
  *
  * @author haki
  */
-public class Engineer {
-    
+public class Manager {
     private int yearsOfService;
     private String name;
     private double salary;
@@ -35,4 +39,6 @@ public class Engineer {
         this.salary = salary;
     }
     
+    
 }
+

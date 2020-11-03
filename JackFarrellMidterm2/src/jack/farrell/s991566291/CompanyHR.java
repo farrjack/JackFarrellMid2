@@ -1,4 +1,4 @@
-package midtermTuesday;
+package jack.farrell.s991566291;
 
 import java.util.Scanner;
 
