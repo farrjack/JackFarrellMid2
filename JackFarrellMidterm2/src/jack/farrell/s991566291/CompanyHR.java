@@ -40,15 +40,29 @@ public class CompanyHR {
         // If engineer years of service more than 10, then employee deserve a raise by 3%
         if (engineer.getYearsOfService() > 10){
          // 1. Calculate new Salary
+        	double oldSalary = engineer.getSalary();
+        	double raise = oldSalary * .03;
+        	double newSalary = oldSalary + raise;
+        	
+        	engineer.setSalary(newSalary);
              
         }
         // 2. Display Engineer Name, New Salary and Years of Service
-        
+        System.out.println(engineer.getName() + " Has worked for " + engineer.getYearsOfService() + " years and earns " + engineer.getSalary());
+       
         
        // If Manager years of service more than 15, then employee deserve a raise by 5%
-       // 3. Calculate Manager new salary
+        if (manager.getYearsOfService() > 15){
+        // 3. Calculate Manager new salary
+        	double oldSalary = manager.getSalary();
+        	double raise = oldSalary * .05;
+        	double newSalary = oldSalary + raise;
+        	
+        	manager.setSalary(newSalary);
+             
+        }
        // 4. Display Manager Name, New Salary and Years of Service
-       
+        System.out.println(manager.getName() + " Has worked for " + manager.getYearsOfService() + " years and earns " + manager.getSalary());
     }
 
 }
